@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../index.html"
+		},
+		{
+			"path": "../index"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "index",
+		"liveServer.settings.port": 5502
+	}
+}
