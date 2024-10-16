@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../index"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "unread"
+	}
+}
