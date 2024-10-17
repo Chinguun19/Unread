@@ -9,6 +9,8 @@ body {
     margin: 0;
     padding: 0;
     background: #f5f5f5;
+    width: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -19,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -110,7 +113,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    width: 142px;
+    width: 160px;
     height: 40px;
     margin-left: 20px;
     margin-top: 0px;
@@ -234,9 +237,31 @@ body {
     background-color: black;
     height: 327px;
     width: 100%;
+
+}
+.choice-container {
+    justify-content: space-around;
+    gap: 0px;
+    margin-top: 15px;
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+    z-index: 5;
+    height: 1000px;
+    width: 1500px;
+    height: 1000x;
+    overflow-y: hidden;
+    
+}
+.choice {
+    display: flex;
+    position: relative;
+    display: inline-block;
 }
 .choice img{
-    width: 244px;
+    display: block;
+    display: flex;
+    width: 260px;
     height: 360px;
     border-radius: 10px;
     display: flex;
@@ -244,17 +269,209 @@ body {
     max-width: 100%;
     object-fit: cover;
     margin-left: 320px;
+    background-color: black
+}
+.choice img:hover {
 }
 .editor-choice h1 {
+    display: flex;
     position: absolute;
     justify-content: center;
-    width: 155px;
+    width: 244px;
     height: 24px;
-    margin-left: 400px;
+    margin-left:400px;
     font-weight: 700;
     font-size: 15.8px;
     line-height: 24px;
-    color: #ffffff;
-    margin-top: 37px;
+    color: #ffffff
 
+}
+.choice-title {
+    position: relative;
+    display: flex;
+}
+.choice-title h2 {
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    left: 330px;
+    width: 240px;
+    bottom: 40px;
+    background-size: cover;
+
+        
+}
+.choice-category {
+    display: flex;
+    height: 20px;
+    width: 60px;
+}
+.choice-category h3 {
+    font-weight: 500;
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    left: 330px;
+    top: 415px;
+    font-size: small;
+    color: white;
+    background-size: cover;
+    padding-left: 3px;
+    background-color: #007BFF;
+    border-radius: 20%;
+}
+.choice-views {
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+
+}
+.choice-views img {
+
+}
+.feed {
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+    left: 400px;
+}
+.author-name{
+    display: flex;
+    margin-left: 250px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.8px;
+    top: 5px;
+    left: 10px;
+    color: #000000;
+    position: absolute;
+}
+.author2 {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 20px;
+
+}
+.author2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 5px;
+    left: 200px;
+    z-index: 2;
+    bottom: 200spx;
+
+}
+.feed {
+    position: relative;
+}
+.Date {
+    font-size: 16px;
+    color: #888888;
+    position: absolute;
+    top: 30px;
+    left: 260px;
+}
+.feed-content {
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    width: 739px;
+    height: 183px;
+    border-radius: 24px;
+}
+.feed-content h1 {
+    top: 30px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 21.1px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    left: 30px;
+}
+.feed-content img {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+
+}
+.feed-content:hover {
+    cursor: pointer;
+    box-shadow: black 40px;
+}
+.feed {
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+    left: 400px;
+}
+.author-name{
+    display: flex;
+    margin-left: 250px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.8px;
+    top: 5px;
+    left: 10px;
+    color: #000000;
+    position: absolute;
+}
+.author2 {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 20px;
+
+}
+.author2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 5px;
+    left: 200px;
+    z-index: 2;
+    bottom: 200spx;
+
+}
+.feed {
+    position: relative;
+}
+.Date {
+    font-size: 16px;
+    color: #888888;
+    position: absolute;
+    top: 30px;
+    left: 260px;
+}
+.feed-content {
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    width: 739px;
+    height: 183px;
+    border-radius: 24px;
+}
+.feed-content h1 {
+    top: 30px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 21.1px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    left: 30px;
+}
+.feed-content img {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+
+}
+.feed-content:hover {
+    cursor: pointer;
+    box-shadow: black 40px;
 }
