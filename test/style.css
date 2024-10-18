@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; /* Font family for the whole page */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.image-container {
+    position: relative; /* Position relative to contain absolute positioning of overlay */
+    max-width: 600px; /* Set a maximum width for the image */
+    margin: auto; /* Center the image container */
+}
+
+.responsive-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+.overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}

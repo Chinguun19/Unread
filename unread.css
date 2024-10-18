@@ -240,35 +240,54 @@ body {
 
 }
 .choice-container {
-    justify-content: space-around;
-    gap: 0px;
+    justify-content: space-between;
+    gap: 50px;
     margin-top: 15px;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     margin: auto;
     z-index: 5;
-    height: 1000px;
-    width: 1500px;
-    height: 1000x;
+    max-height: 500px;
+    max-width: 1400px;
     overflow-y: hidden;
     
 }
+.choice-container:last-child {
+    margin-right: 200px
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    bottom: 100px;
+    width: 10px;  
+    height: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0073e6;  
+    border-radius: 10px;        
+    border: 2px solid #f0f2f5; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f2f5;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #005bb5;  
+}
+
 .choice {
-    display: flex;
+    flex: 1;
     position: relative;
-    display: inline-block;
 }
 .choice img{
-    display: block;
-    display: flex;
     width: 260px;
     height: 360px;
     border-radius: 10px;
     display: flex;
     margin-top: 100px;
-    max-width: 100%;
     object-fit: cover;
-    margin-left: 320px;
     background-color: black
 }
 .choice img:hover {
@@ -287,31 +306,23 @@ body {
 
 }
 .choice-title {
-    position: relative;
-    display: flex;
+    margin-left: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%, 95%);
 }
 .choice-title h2 {
     font-size: 20px;
     color: #ffffff;
-    position: absolute;
-    left: 330px;
     width: 240px;
-    bottom: 40px;
-    background-size: cover;
 
-        
+    background-size: cover;       
 }
-.choice-category {
-    display: flex;
-    height: 20px;
-    width: 60px;
-}
-.choice-category h3 {
+.choice-title h3 {
     font-weight: 500;
-    position: absolute;
     height: 20px;
     width: 200px;
-    left: 330px;
     top: 415px;
     font-size: small;
     color: white;
@@ -320,16 +331,7 @@ body {
     background-color: #007BFF;
     border-radius: 20%;
 }
-.choice-views {
-    font-weight: 600;
-    font-size: 12px;
-    color: #ffffff;
-
-}
-.choice-views img {
-
-}
-.feed {
+.feed-right {
     justify-content: center;
     margin: auto;
     margin-top: 200px;
@@ -363,9 +365,7 @@ body {
     bottom: 200spx;
 
 }
-.feed {
-    position: relative;
-}
+
 .Date {
     font-size: 16px;
     color: #888888;
