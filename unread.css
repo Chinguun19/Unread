@@ -237,25 +237,28 @@ body {
     background-color: black;
     height: 327px;
     width: 100%;
+    align-content: center;
 
 }
 .choice-container {
+    position: absolute;
     justify-content: space-between;
     gap: 50px;
     margin-top: 15px;
     display: flex;
     overflow-x: auto;
-    margin: auto;
+    margin-right: 600px;
+    margin-left: 300px;
     z-index: 5;
     max-height: 500px;
-    max-width: 1400px;
+    max-width: 1600px;
     overflow-y: hidden;
+    
     
 }
 .choice-container:last-child {
-    margin-right: 200px
-}
 
+}
 ::-webkit-scrollbar {
     position: absolute;
     bottom: 100px;
@@ -330,50 +333,113 @@ body {
     padding-left: 3px;
     background-color: #007BFF;
     border-radius: 20%;
+} 
+.main-feed {
+    margin-top: 100px;
+    position: relative;
+}
+.feed-left {
+    position: relative;
+    left: 250px;
+}
+.author-name{
+    display: flex;
+    margin-left: 250px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14.8px;
+    left: 2px;
+    color: #000000;
+    position: absolute;
+}
+.author2 {
+    margin-top: 2px;
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.author2 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 5px;
+    left: 200px;
+    z-index: 2;
+    bottom: 200px;
+}
+
+.DateL {
+    position: absolute;
+    font-size: 16px;
+    color: #888888;
+    left: 250px;
+    top: 20px;
+}
+.feed-content {
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    width: 739px;
+    height: 183px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 50px 4px #D1D1D14D;
+    
+}
+.feed-content h1 {
+    top: 30px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 21.1px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    left: 30px;
+}
+.feed-content img {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+
 }
 .feed-right {
-    justify-content: center;
-    margin: auto;
-    margin-top: 200px;
-    left: 400px;
+    position: relative;
+    top: 500px;
+    left: 800px;
 }
-.author-name{
-    display: flex;
-    margin-left: 250px;
+.author-nameR{
     font-family: Inter;
     font-weight: 500;
-    font-size: 13.8px;
-    top: 5px;
-    left: 10px;
+    font-size: 14.8px;
+    left: 760px;
     color: #000000;
     position: absolute;
+    bottom: 225px;
 }
-.author2 {
-    margin-top: 10px;
-    display: flex;
+.authorR {
+    margin-top: 2px;
     margin-left: 200px;
     margin-bottom: 20px;
-
 }
-.author2 img {
+.authorR img {
+    position: absolute;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    top: 5px;
-    left: 200px;
+    bottom: 50px;
+    left: 850px;
     z-index: 2;
-    bottom: 200spx;
-
+    bottom: 200px;
 }
 
-.Date {
+.DateR {
+    position: absolute;
     font-size: 16px;
     color: #888888;
-    position: absolute;
-    top: 30px;
-    left: 260px;
+    left: 630px;
+    bottom: 200px;
 }
-.feed-content {
+.feed-contentR {
     position: relative;
     margin-left: 200px;
     display: flex;
@@ -382,8 +448,10 @@ body {
     width: 739px;
     height: 183px;
     border-radius: 24px;
+    box-shadow: 0px 0px 50px 4px #D1D1D14D;
+    ;
 }
-.feed-content h1 {
+.feed-contentR h1 {
     top: 30px;
     position: absolute;
     font-weight: 700;
@@ -392,86 +460,41 @@ body {
     color: #000000;
     left: 30px;
 }
-.feed-content img {
+.feed-contentR img {
     position: absolute;
     left: 550px;
     top: 20px;
 
 }
-.feed-content:hover {
-    cursor: pointer;
-    box-shadow: black 40px;
+.author-info {
+
 }
-.feed {
-    justify-content: center;
+
+.feed-right2 {
+    position: relative;
+    top: 500px;
+    left: 800px;
+}
+
+.grid-container {
+    position: relative;
+    gap: 30px;
+    top: 300px;
     margin: auto;
-    margin-top: 200px;
-    left: 400px;
-}
-.author-name{
-    display: flex;
-    margin-left: 250px;
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 13.8px;
-    top: 5px;
-    left: 10px;
-    color: #000000;
-    position: absolute;
-}
-.author2 {
-    margin-top: 10px;
-    display: flex;
-    margin-left: 200px;
-    margin-bottom: 20px;
+    border: 2px solid green;
+    height: 1135px;
+    width: 1302px;
+    display: grid;
 
+    
 }
-.author2 img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    top: 5px;
-    left: 200px;
-    z-index: 2;
-    bottom: 200spx;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 24px;
+}
 
-}
-.feed {
-    position: relative;
-}
-.Date {
-    font-size: 16px;
-    color: #888888;
-    position: absolute;
-    top: 30px;
-    left: 260px;
-}
-.feed-content {
-    position: relative;
-    margin-left: 200px;
-    display: flex;
-    justify-content: left;
-    background-color: white;
-    width: 739px;
-    height: 183px;
-    border-radius: 24px;
-}
-.feed-content h1 {
-    top: 30px;
-    position: absolute;
-    font-weight: 700;
-    font-size: 21.1px;
-    letter-spacing: 0.15px;
-    color: #000000;
-    left: 30px;
-}
-.feed-content img {
-    position: absolute;
-    left: 550px;
-    top: 20px;
 
-}
-.feed-content:hover {
-    cursor: pointer;
-    box-shadow: black 40px;
-}
